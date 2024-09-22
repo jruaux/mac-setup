@@ -1,5 +1,4 @@
 tap "homebrew/bundle"
-tap "tursodatabase/tap"
 brew "btop"
 brew "starship"
 brew "zsh-autosuggestions"
