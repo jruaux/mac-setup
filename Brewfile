@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 brew "btop"
+brew "java"
 brew "starship"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
