@@ -1,5 +1,3 @@
-export EDITOR=nvim
-
 # History
 setopt hist_ignore_all_dups             # ignore duplicate entries
 setopt hist_save_no_dups                # don't save duplicates
@@ -48,8 +46,6 @@ alias upgrade="brew upgrade"
 alias uninstall="brew uninstall --zap"  # uninstall with zap to remove app leftovers
 alias outdated="brew outdated"
 alias autoremove="brew autoremove"
-alias vim="nvim"
-alias v="nvim"
 alias so="source ~/.zshrc" # source zshrc to update changes
 
 # Plugins
