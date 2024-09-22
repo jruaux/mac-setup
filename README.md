@@ -35,9 +35,9 @@ git -v
 
 Automatic setup:
 ```sh
-mkdir ~/Developer
-git clone https://github.com/Jaycedam/mac-setup.git ~/Developer/mac-setup
-cd ~/Developer/mac-setup && sh main.sh
+mkdir ~/git
+git clone https://github.com/jruaux/mac-setup.git ~/git/mac-setup
+cd ~/git/mac-setup && sh main.sh
 ```
 
 ## Update the backup:
