@@ -48,6 +48,18 @@ alias outdated="brew outdated"
 alias autoremove="brew autoremove"
 alias so="source ~/.zshrc" # source zshrc to update changes
 
+# Functions
+function rmeclipse() {
+    local directory="${1:-.}"
+
+    if [ ! -d "$directory" ]; then
+        echo "Error: '$directory' is not a directory."
+        return 1
+    fi
+
+    find "$directory" \( -name ".classpath" -o -name ".project" -o -name ".settings" \) -exec rm -rf {} +
+}
+
 # Plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
