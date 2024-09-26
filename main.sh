@@ -3,6 +3,9 @@
 # Variables and directory check 
 source root.sh
 
+# Installs oh-my-zsh
+source modules/oh-my-zsh.sh
+
 # Installs brew and packages from Brewfile
 # You can update the Brewfile by creating your own backup (bash backup.sh) or manually
 source modules/brew.sh

@@ -13,6 +13,7 @@ rm -rf $BACKUP_DIR/*
 echo "${ARROW}Backing up dotfiles..."
 mv -v ~/.config $BACKUP_DIR
 mv -v ~/.zshrc $BACKUP_DIR
+mv -v ~/.zsh $BACKUP_DIR
 
 source modules/restore.sh
 
