@@ -66,6 +66,37 @@ config.colors = {
     },
 }
 
+config.keys = {
+	-- Jump word to the left
+	{
+		key = 'LeftArrow',
+		mods = 'OPT',
+		action = wezterm.action.SendKey({ key = 'b', mods = 'ALT' }),
+	},
+	-- Jump word to the right
+	{
+		key = 'RightArrow',
+		mods = 'OPT',
+		action = wezterm.action.SendKey({ key = 'f', mods = 'ALT' }),
+	},
+
+	-- Go to beginning of line
+	{
+		key = 'LeftArrow',
+		mods = 'CMD',
+		action = wezterm.action.SendKey({
+		key = 'a',
+		mods = 'CTRL',
+		}),
+	},
+	-- Go to end of line
+	{
+		key = 'RightArrow',
+		mods = 'CMD',
+		action = wezterm.action.SendKey({ key = 'e', mods = 'CTRL' }),
+	}
+}
+
 -- auto maximize on startup
 wezterm.on('gui-startup', function(cmd)
     local tab, pane, window = mux.spawn_window(cmd or {})
