@@ -20,7 +20,7 @@ defaults write com.apple.finder "CreateDesktop" -bool true # Disable desktop ico
 defaults write com.apple.finder "ShowExternalHardDrivesOnDesktop" -bool false # Disable drive icon on desktop
 
 # Screencapture 
-defaults write com.apple.screencapture "location" -string "~/Pictures"
+defaults write com.apple.screencapture "location" -string "~/Downloads"
 
 # Privacy
 defaults write com.apple.AdLib.plist allowApplePersonalizedAdvertising -bool false
