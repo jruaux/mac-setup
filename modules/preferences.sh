@@ -8,7 +8,7 @@ defaults write com.apple.dock "autohide-delay" -float "0" # Disable delay on mou
 defaults write com.apple.dock expose-group-apps -bool true # Groups windows by application on mission control
 defaults write com.apple.dock "mru-spaces" -bool false # Disable rearrange Spaces automatically
 defaults write com.apple.dock "show-recents" -bool false # Disable recents
-defaults write com.apple.dock static-only -bool true # only show open apps on dock
+#defaults write com.apple.dock static-only -bool true # only show open apps on dock
 
 # Finder
 defaults write com.apple.finder "ShowPathbar" -bool true # Show path bar
