@@ -35,7 +35,7 @@ wezterm.on(
         local edge_foreground = background
 
         local title = tab_title(tab)
-        local idx = tab.tab_index
+        local idx = tab.tab_index + 1
         local tabtext = table.concat({ idx, title }, ' ')
 
         return {
