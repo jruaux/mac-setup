@@ -7,6 +7,7 @@ local mux = wezterm.mux
 -- local status = require("status") -- custom status (tabs and info)
 
 -- Font
+-- config.font = wezterm.font('Monaco')
 config.font_size = 16
 
 -- Window
@@ -17,7 +18,7 @@ config.initial_cols = 120
 config.initial_rows = 30
 
 -- Tabs
-config.use_fancy_tab_bar = false
+config.use_fancy_tab_bar = true
 config.show_new_tab_button_in_tab_bar = false
 -- config.tab_max_width = 30
 config.tab_bar_at_bottom = true
@@ -61,6 +62,7 @@ config.keys = {
 		action = wezterm.action.SendKey({ key = 'e', mods = 'CTRL' }),
 	}
 }
+
 
 -- auto maximize on startup
 wezterm.on('gui-startup', function(cmd)
