@@ -11,18 +11,20 @@ local mux = wezterm.mux
 config.font_size = 16
 
 -- Window
---config.macos_window_background_blur = 50 -- blur
+-- config.macos_window_background_blur = 50 -- blur
 config.window_decorations = "RESIZE" -- removes title bar
 config.adjust_window_size_when_changing_font_size = false
 config.initial_cols = 120
 config.initial_rows = 30
 
+config.window_close_confirmation = "NeverPrompt"
+
 -- Tabs
-config.use_fancy_tab_bar = true
-config.show_new_tab_button_in_tab_bar = false
+-- config.use_fancy_tab_bar = true
+-- config.show_new_tab_button_in_tab_bar = false
 -- config.tab_max_width = 30
 config.tab_bar_at_bottom = true
-config.hide_tab_bar_if_only_one_tab = true
+-- config.hide_tab_bar_if_only_one_tab = true
 
 -- Theme
 --config.color_scheme = "Dracula (Official)"
@@ -62,12 +64,5 @@ config.keys = {
 		action = wezterm.action.SendKey({ key = 'e', mods = 'CTRL' }),
 	}
 }
-
-
--- auto maximize on startup
-wezterm.on('gui-startup', function(cmd)
-    local tab, pane, window = mux.spawn_window(cmd or {})
-    window:gui_window():maximize()
-end)
 
 return config
